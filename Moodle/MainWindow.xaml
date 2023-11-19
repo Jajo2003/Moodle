@@ -5,26 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Moodle"
         mc:Ignorable="d"
-        Title="Login" Height="600" Width="1000">
+        Title="Moodle" Height="450" Width="800">
+
     <Window.Resources>
-        <Style x:Key="gridLayout" TargetType="Grid">
-            <Setter Property="Width" Value="300"></Setter>
-            <Setter Property="Height" Value="200"></Setter>
-            <Setter Property="Background" Value="Gray"></Setter>
-            
+        <Style x:Key="grid" TargetType="Grid">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="200"/>
+            <Setter Property="Background" Value="Black"/>
+
         </Style>
+        <Style x:Key="label" TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+
+
     </Window.Resources>
-    <Grid Style="{StaticResource gridLayout}">
-        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="150" Margin="5">
-                <Label Content="Username:"/>
-                <TextBox Width="100" Height="20" Name="userbox"></TextBox>
+    <Grid Style="{StaticResource grid}">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
+                <Label Content="Name :" Style="{StaticResource label}">
+                </Label>
+                <TextBox Width="120" Height="20" Name="userbox"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="150" Margin="5">
-                <Label Content="Password:"/>
-                <PasswordBox PasswordChar="$" Width="100" Height="20" Name="passbox"></PasswordBox>
+            <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
+                <Label Content="Password :" Style="{StaticResource label}">
+                </Label>
+                <PasswordBox Width="100" Height="20" PasswordChar="$" Name="passbox"/>
             </StackPanel>
-            <Button Content="Login" Margin="20" Width="90" Height="30" Background="Coral" Click="register"></Button>
+            <Button Content="Login" Width="100" Height="25" Margin="0 20 0 20" FontWeight="Bold" Cursor="Hand" Click="checkData"></Button>
         </StackPanel>
+
+
+
+
     </Grid>
 </Window>
