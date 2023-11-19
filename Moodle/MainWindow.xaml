@@ -1,0 +1,30 @@
+﻿<Window x:Class="Moodle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Moodle"
+        mc:Ignorable="d"
+        Title="Login" Height="600" Width="1000">
+    <Window.Resources>
+        <Style x:Key="gridLayout" TargetType="Grid">
+            <Setter Property="Width" Value="300"></Setter>
+            <Setter Property="Height" Value="200"></Setter>
+            <Setter Property="Background" Value="Gray"></Setter>
+            
+        </Style>
+    </Window.Resources>
+    <Grid Style="{StaticResource gridLayout}">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="150" Margin="5">
+                <Label Content="Username:"/>
+                <TextBox Width="100" Height="20" Name="userbox"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="150" Margin="5">
+                <Label Content="Password:"/>
+                <PasswordBox PasswordChar="$" Width="100" Height="20" Name="passbox"></PasswordBox>
+            </StackPanel>
+            <Button Content="Login" Margin="20" Width="90" Height="30" Background="Coral" Click="register"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

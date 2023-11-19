@@ -1,0 +1,15 @@
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.csproj.AssemblyReference.cache
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\App.g.cs
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle_MarkupCompile.cache
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\bin\Debug\Moodle.exe.config
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\bin\Debug\Moodle.exe
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\bin\Debug\Moodle.pdb
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\MainWindow.g.cs
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle_MarkupCompile.lref
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\MainWindow.baml
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.g.resources
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.Properties.Resources.resources
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.csproj.GenerateResource.cache
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.csproj.CoreCompileInputs.cache
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.exe
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.pdb
