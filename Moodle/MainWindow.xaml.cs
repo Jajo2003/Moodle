@@ -33,9 +33,7 @@ namespace Moodle
 			string username = userbox.Text.ToString();
 			string password = passbox.Password.ToString();
 			if (checkboxes()) {
-				
 			
-
 			string connectionString = "Data Source=DESKTOP-IBERPBJ;Initial Catalog=TEST;Integrated Security=True";
 
 			string move = "INSERT INTO LoginTable (USERNAME,USERPASSWORD) VALUES (@name,@pass)";
@@ -49,15 +47,20 @@ namespace Moodle
 					addStudent.Parameters.AddWithValue("@name", username);
 					addStudent.Parameters.AddWithValue("@pass", password);
 
-					int rowsAffected = addStudent.ExecuteNonQuery();
-
-						if (rowsAffected > 0)
+						if (!checkexist(username))
 						{
-							MessageBox.Show("Student added Succesfully");
+
+							int rowsAffected = addStudent.ExecuteNonQuery();
+
+							if (rowsAffected > 0)
+							{
+								MessageBox.Show("Student added Succesfully");
+							}
+							
 						}
 						else
 						{
-							MessageBox.Show("Error");
+							MessageBox.Show("This Username already taken! choose different Username");
 						}
 					}
 				conn.Close();
@@ -85,6 +88,31 @@ namespace Moodle
 			return true;
 			
 		}
+		private bool checkexist(string user)
+		{
+			string connectionString = "Data Source=DESKTOP-IBERPBJ;Initial Catalog=TEST;Integrated Security=True";
+
+			string move = "SELECT COUNT(*) FROM LoginTable WHERE USERNAME = @User";
+
+			using(SqlConnection conn = new SqlConnection(connectionString)) {
+
+				conn.Open();
+			
+				using(SqlCommand checkexist = new SqlCommand(move,conn))
+				{
+					checkexist.Parameters.AddWithValue("@User", user);
+					
+					int result = (int)checkexist.ExecuteScalar();
+
+					conn.Close();
+
+					return result > 0;
+				}
+				
+			}
+
+		}
+
 	}
 	
 }
