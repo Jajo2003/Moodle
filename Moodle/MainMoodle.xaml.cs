@@ -14,14 +14,17 @@ using System.Windows.Shapes;
 
 namespace Moodle
 {
-	/// <summary>
-	/// Interaction logic for MainMoodle.xaml
-	/// </summary>
 	public partial class MainMoodle : Window
 	{
 		public MainMoodle()
 		{
 			InitializeComponent();
+		}
+		public void logOut(object sender, EventArgs e)
+		{
+			MainWindow Mainwindow = new MainWindow();
+			Mainwindow.Show();
+			this.Close();
 		}
 	}
 }
