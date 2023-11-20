@@ -26,14 +26,19 @@
             <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
                 <Label Content="Name :" Style="{StaticResource label}">
                 </Label>
-                <TextBox Width="120" Height="20" Name="userbox"/>
+                <TextBox Width="100" Height="20" Name="userbox"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
                 <Label Content="Password :" Style="{StaticResource label}">
                 </Label>
                 <PasswordBox Width="100" Height="20" PasswordChar="$" Name="passbox"/>
             </StackPanel>
-            <Button Content="Login" Width="100" Height="25" Margin="0 20 0 20" FontWeight="Bold" Cursor="Hand" Click="checkData"></Button>
+            <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
+                <Label Content="Email :" Style="{StaticResource label}">
+                </Label>
+                <TextBox Width="100" Height="20" Name="MailBox"></TextBox>
+            </StackPanel>
+            <Button Content="Register" Width="100" Height="25" Margin="0 20 0 20" FontWeight="Bold" Cursor="Hand" Click="addAccount"></Button>
         </StackPanel>
 
 

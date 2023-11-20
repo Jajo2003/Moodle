@@ -13,3 +13,5 @@ C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.csproj.Generate
 C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.csproj.CoreCompileInputs.cache
 C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.exe
 C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.pdb
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\MainMoodle.g.cs
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\MainMoodle.baml
