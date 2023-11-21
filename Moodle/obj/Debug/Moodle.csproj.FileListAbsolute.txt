@@ -15,3 +15,7 @@ C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.exe
 C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Moodle.pdb
 C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\MainMoodle.g.cs
 C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\MainMoodle.baml
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Login.g.cs
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Register.g.cs
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Login.baml
+C:\Users\JAJO\Desktop\Learning C#\Moodle\Moodle\obj\Debug\Register.baml

@@ -9,11 +9,9 @@
     
     <Grid>
         <StackPanel Orientation="Vertical">
-        <StackPanel HorizontalAlignment="Right" Height="25" VerticalAlignment="top" Margin="5">
-            <Button Content="Log out" Width="60" Height="20" Click="logOut" ></Button>
-        </StackPanel>
-        
-
+            <StackPanel HorizontalAlignment="Right" Height="25" VerticalAlignment="top" Margin="5">
+                <Button Content="Log out" Width="60" Height="20" Click="logOut" ></Button>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Window>

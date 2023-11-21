@@ -10,39 +10,34 @@
     <Window.Resources>
         <Style x:Key="grid" TargetType="Grid">
             <Setter Property="Width" Value="300"/>
-            <Setter Property="Height" Value="200"/>
+            <Setter Property="Height" Value="150"/>
             <Setter Property="Background" Value="Black"/>
-
         </Style>
-        <Style x:Key="label" TargetType="Label">
+        <Style x:Key="Greet" TargetType="TextBlock">
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Width" Value="100"/>
+            <Setter Property="FontSize" Value="20"/>
         </Style>
-
+        <Style x:Key="optButton" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
 
     </Window.Resources>
     <Grid Style="{StaticResource grid}">
-        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
-            <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
-                <Label Content="Name :" Style="{StaticResource label}">
-                </Label>
-                <TextBox Width="100" Height="20" Name="userbox"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
-                <Label Content="Password :" Style="{StaticResource label}">
-                </Label>
-                <PasswordBox Width="100" Height="20" PasswordChar="$" Name="passbox"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Width="200" HorizontalAlignment="Center" Margin="10">
-                <Label Content="Email :" Style="{StaticResource label}">
-                </Label>
-                <TextBox Width="100" Height="20" Name="MailBox"></TextBox>
-            </StackPanel>
-            <Button Content="Register" Width="100" Height="25" Margin="0 20 0 20" FontWeight="Bold" Cursor="Hand" Click="addAccount"></Button>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Vertical"> 
+             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBlock  Style="{StaticResource Greet}" Text="Welcome to the Moodle"/>
+                </StackPanel>
+            
+              <StackPanel Orientation="Horizontal" Margin="30">
+                <Button Content="Login" Width="100" Style="{StaticResource optButton}" Click="openLoginWindow" Cursor="Hand"/>
+
+                <TextBlock Width="20"/>
+
+                <Button Content="Register" Width="100" Style="{StaticResource optButton}" Click="openRegisterWindow" Cursor="Hand"/>
+                  
+              </StackPanel>
         </StackPanel>
-
-
-
-
     </Grid>
 </Window>
