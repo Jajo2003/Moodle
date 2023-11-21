@@ -73,7 +73,7 @@ namespace Moodle
 							}
 							else
 							{
-								MessageBox.Show("Email must Contain '@' symbol");
+								MessageBox.Show("Email is not valid");
 							}
 
 						}
